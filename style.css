@@ -24,23 +24,27 @@ body {
 img {
   width: 26.8rem;
   object-fit: contain;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
   width: 100%;
-  padding-top: 6rem;
+  padding-top: 4rem;
   background-color: whitesmoke;
 }
 .do-this {
-  margin: 0;
+  margin: 0rem;
   font-weight: bold;
   font-size: large;
 }
 .sign-up {
   background-color: white;
   padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: inline-block;
-  width: 100%;
+  width: 96%;
   font-family: Averta;
 }
 .input {
@@ -50,7 +54,7 @@ img {
 }
 .input label {
   display: block;
-  font-size: small;
+  font-size: 11px;
   font-weight: bold;
 }
 input {
@@ -59,6 +63,7 @@ input {
   padding: 0.3em;
   border-radius: 4px;
   width: 16em;
+  border-color: #e5e7eb;
 }
 
 button {
@@ -75,4 +80,9 @@ button {
 
 .bottom {
   padding: 2rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: blue;
 }
