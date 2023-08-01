@@ -8,3 +8,23 @@ img {
   width: 26.8rem;
   object-fit: contain;
 }
+
+.container {
+  width: 100%;
+  padding-top: 6rem;
+  background-color: whitesmoke;
+}
+
+.sign-up {
+  background-color: white;
+  padding: 3rem;
+  display: inline-block;
+  width: 100%;
+}
+.input {
+  display: inline-block;
+  width: 30%;
+}
+.input label {
+  display: block;
+}
