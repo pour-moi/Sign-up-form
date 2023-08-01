@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Averta-Bold";
+  src: url(AvertaDemoPE-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url(AvertaDemoPECuttedDemo-Regular.otf);
+}
+
+.head {
+  padding-left: 2rem;
+  font-family: Averta-Bold;
+  font-size: 1.5em;
+  width: 45vw;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,17 +31,35 @@ img {
   padding-top: 6rem;
   background-color: whitesmoke;
 }
-
+.do-this {
+  margin: 0;
+  font-weight: bold;
+  font-size: large;
+}
 .sign-up {
   background-color: white;
-  padding: 3rem;
+  padding-left: 2rem;
   display: inline-block;
   width: 100%;
+  font-family: Averta;
 }
 .input {
   display: inline-block;
-  width: 30%;
+  width: 35%;
+  padding: 0.4em;
 }
 .input label {
   display: block;
+  font-size: small;
+  font-weight: bold;
+}
+input {
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.3em;
+  border-radius: 4px;
+  width: 16em;
+}
+.bottom {
+  padding: 2rem;
 }
