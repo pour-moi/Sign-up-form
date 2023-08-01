@@ -17,37 +17,47 @@
       <p class="head">You know you want to.</p>
       <div class="sign-up">
         <p class="do-this">Let's do this!</p>
-        <form method="get">
+        <form method="get" id="sign-up">
           <div class="input">
             <label for="first_name">FIRST NAME</label>
-            <input type="text" id="first_name" />
+            <input type="text" id="first_name" required />
           </div>
           <div class="input">
             <label for="last_name">LAST NAME</label>
-            <input type="text" id="last_name" />
+            <input type="text" id="last_name" required />
           </div>
           <br />
           <div class="input">
             <label for="email">Email</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" required />
           </div>
           <div class="input">
             <label for="phone_number">PHONE NUMBER</label>
-            <input type="number" id="phone_number" />
+            <input type="tel" id="phone_number" />
           </div>
           <br />
           <div class="input">
             <label for="password">PASSWORD</label>
-            <input type="password" id="password" />
+            <input type="password" id="password" required />
           </div>
           <div class="input">
             <label for="confirmation">CONFIRM PASSWORD</label>
-            <input type="text" id="confirmation" />
+            <input type="text" id="confirmation" required />
           </div>
         </form>
       </div>
       <div class="bottom">
-        <button>Create Account</button>
+        <button type="button" onclick="validateForm()">Create Account</button>
+        <script>
+          function validateForm() {
+            var form = document.getElementById("sign-up");
+            if (form.checkValidity()) {
+              form.submit();
+            } else {
+              form.reportValidity();
+            }
+          }
+        </script>
         <p>Already have an account? <a href="#">Log in</a></p>
       </div>
     </div>
